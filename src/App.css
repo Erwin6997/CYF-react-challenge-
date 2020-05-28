@@ -1,0 +1,122 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  margin-left: 70%;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  position: static;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-content {
+  padding-top: 20px;
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.search {
+  padding: 5px 0 20px 0;
+}
+.table {
+  margin-top: 2cm;
+  border-collapse: collapse;
+  width: 88%;
+  box-shadow: 0px 0px 20px rgba(67, 68, 68, 0.7);
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9dc79f;
+  color: white;
+  font-size: medium;
+}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+tr {
+  color: #5b5757;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table,
+td {
+  border: 1px solid #333;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+thead,
+tfoot {
+  background-color: rgb(163, 162, 162);
+  color: #fff;
+}
+
+.results {
+  padding-top: 15px;
+}
+
+.footer {
+  background-color: rgb(198, 226, 243);
+  margin-top: 3cm;
+  padding-top: 20px;
+  text-align: center;
+}
+.card {
+  width: 20rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  margin: 30px 5% 10px 2%;
+  box-shadow: 0px 0px 20px rgba(23, 24, 24, 0.7);
+}
+.card1 {
+  margin-top: 3cm;
+  display: flex;
+  padding-left: 8%;
+  width: 90%;
+  grid-gap: 35px;
+  justify-content: center;
+}
+.card-img-top {
+  width: 8.2cm;
+  height: 5cm;
+}
+@media only screen and (max-width: 600px) {
+  .root {
+    grid-template-columns: auto;
+  }
+  .card1 {
+    display: block;
+  }
+  .App-header {
+    width: 100%;
+  }
+}
