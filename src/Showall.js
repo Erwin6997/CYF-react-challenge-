@@ -11,6 +11,7 @@ const Showall = () => {
         <div className="card1">
           <p key={index}> High Scores : {Element.name} </p>
           {Element.scores.map((elem, index) => {
+            
             return (
               <div className="card2">
               <table className="table">
