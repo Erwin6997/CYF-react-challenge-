@@ -29,14 +29,6 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .search {
   padding: 5px 0 20px 0;
 }
@@ -46,50 +38,15 @@
   width: 88%;
   box-shadow: 0px 0px 20px rgba(67, 68, 68, 0.7);
 }
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #9dc79f;
-  color: white;
+.card2 {
+  
+  text-align: center;
+  background-color: #dce4dc;
+  color: rgb(66, 65, 65);
   font-size: medium;
 }
-.table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.table tr:hover {
-  background-color: #ddd;
-}
-tr {
-  color: #5b5757;
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-table,
-td {
-  border: 1px solid #333;
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-thead,
-tfoot {
-  background-color: rgb(163, 162, 162);
-  color: #fff;
-}
-
-.results {
-  padding-top: 15px;
-}
-
-.footer {
-  background-color: rgb(198, 226, 243);
-  margin-top: 3cm;
-  padding-top: 20px;
+.card1 {
   text-align: center;
-}
-.card {
   width: 20rem;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -97,17 +54,19 @@ tfoot {
   margin: 30px 5% 10px 2%;
   box-shadow: 0px 0px 20px rgba(23, 24, 24, 0.7);
 }
-.card1 {
-  margin-top: 3cm;
-  display: flex;
-  padding-left: 8%;
-  width: 90%;
-  grid-gap: 35px;
+.card {
+  padding-top: 1cm;
+  padding-left: 30%;
   justify-content: center;
+  color: green;
+  font-size: large;
 }
-.card-img-top {
-  width: 8.2cm;
-  height: 5cm;
+
+.footer {
+  background-color: rgb(174, 217, 243);
+  margin-top: 3cm;
+  padding-top: 20px;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .root {

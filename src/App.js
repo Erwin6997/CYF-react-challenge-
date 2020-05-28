@@ -3,6 +3,7 @@ import Showall from "./Showall";
 import Footer from "./Footer";
 
 
+
 import "./App.css";
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
         CYF challenge
         <img
           className="App-logo "
-          src=" https://image.flaticon.com/icons/svg/139/139899.svg "
+          src="https://www.joypixels.com/images/logos/logo-icon-cyan.svg"
         />
       </heading>
 
