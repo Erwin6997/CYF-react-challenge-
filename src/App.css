@@ -40,9 +40,9 @@
   padding: 5px 0 20px 0;
 }
 .table {
-  margin-top: 2cm;
+
   border-collapse: collapse;
-  width: 88%;
+  width: 100%;
   box-shadow: 0px 0px 20px rgba(67, 68, 68, 0.7);
 }
 .card2 {
@@ -65,10 +65,26 @@
   padding-top: 1cm;
   padding-left: 30%;
   justify-content: center;
-  color: green;
+  color: rgb(15, 15, 15);
   font-size: large;
 }
 
+table,
+th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: unset;
+  background-color: #cdebce;
+  color: rgb(59, 57, 57);
+  font-size: medium;
+}
+table,
+td {
+  text-align: center;
+  border: 1px solid rgb(90, 61, 61);
+  border: 1px solid rgb(126, 125, 125);
+ 
+}
 .footer {
   background-color: rgb(174, 217, 243);
   margin-top: 3cm;

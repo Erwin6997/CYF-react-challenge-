@@ -13,7 +13,9 @@ const Showall = () => {
           {Element.scores.map((elem, index) => {
             return (
               <div className="card2">
-                <p key={index}>{elem.n} : {elem.s}</p>
+              <table className="table">
+                <th key={index}>{elem.n}</th> <td>{elem.s}</td>
+              </table>
               </div>
             );
           })
