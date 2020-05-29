@@ -1,33 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import allCountryScores from "./data/Scores";
+import Result from "./Result";
+
 const Showall = () => {
+  allCountryScores.sort((a, b) => (a.name > b.name ? 1 : -1));
+  const [Order, Norder] = useState(false);
   return (
     <div className="card">
       <div>
         <p>High Scores Per Country </p>
+        <button className="btn btn-primary"
+          onClick={() => {
+            Norder(!Order);
+            }}>
+          {Order ? "By Order" : "Not Order"}
+        </button>
       </div>
-    {allCountryScores.map((Element, index) => {
-      return(
-        <div className="card1">
-          <p key={index}> High Scores : {Element.name} </p>
-          {Element.scores.map((elem, index) => {
-            
-            return (
-              <div className="card2">
-              <table className="table">
-                <th key={index}>{elem.n}</th> <td>{elem.s}</td>
-              </table>
-              </div>
-            );
-          })
+          {allCountryScores.map((country, index) =>(
+            <Result key={index} {...country} Order={Order}/>
+          ))
           }
-        </div>
-      );
-    })
-    }
-    </div>
+  </div>
   );
-}
+};
 
 
 
